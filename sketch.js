@@ -10,7 +10,7 @@ var ball;
 var slingShot;
 var polygon_img;
 function preload(){
-  polygon_img=loadImage("polygon.png");
+  polygon_img=loadImage("rock.png");
 }
 function setup() {
   createCanvas(900,400);
