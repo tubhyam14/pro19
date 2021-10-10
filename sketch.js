@@ -10,7 +10,7 @@ var ball;
 var slingShot;
 var polygon_img;
 function preload(){
-  polygon_img=loadImage("rock.png");
+  polygonImg=loadImage("rock.png");
 }
 function setup() {
   createCanvas(900,400);
@@ -58,14 +58,10 @@ function draw() {
    
 
   imageMode(CENTER);
-  image( polygon_img,ball.position.x,ball.position.y,40,40);
+  image( polygonImg,ball.position.x,ball.position.y,40,40);
 
 
-  stroke(0,0,0);
-  fill("white");
-  textSize(20);
-  fill("lightyellow");
-  text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",100,30);
+
 
  
   ground.display();
@@ -88,7 +84,7 @@ function draw() {
   block10.display();
   block11.display();
   block12.display();
-  fill("turquoise");
+  fill("green");
   block13.display();
   block14.display();
   block15.display();
